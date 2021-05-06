@@ -1,11 +1,13 @@
 
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
 import '../animalItem.dart';
 
 class SecondeApp extends StatefulWidget {
+
   @override
   _SecondeAppState createState() => _SecondeAppState();
+
   List<Animal> list;
 
   SecondeApp({Key key, @required this.list}) : super(key: key);
@@ -30,7 +32,17 @@ class _SecondeAppState extends State<SecondeApp> {
                 keyboardType: TextInputType.text,
                 maxLines: 1,
               ),
-              //3333333333333
+              //############################
+              Container(
+                height: 50,
+                child: ListView(
+                  scrollDirection: Axis.vertical,
+                  children: <Widget>[
+                    Text('Test App \n Test를 위한 AndroidApp'),
+                  ],
+                ),
+              ),
+              //#############################3
               Container(
                 height: 50,
                 child: ListView(scrollDirection: Axis.horizontal,
@@ -200,6 +212,7 @@ class _SecondeAppState extends State<SecondeApp> {
                   });
                 },
               ),
+
             ],
           ),
         ),

@@ -1,12 +1,15 @@
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:tabbar_test/sub/firstApp.dart';
 import 'package:tabbar_test/sub/secondApp.dart';
 import 'animalItem.dart';
+import 'cupertinoMain.dart';
 
-void main() {
-  runApp(MyApp());
-}
+void main() =>runApp(CupertinoApp());
+// void main() {
+//   runApp(MyApp());
+// }
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
